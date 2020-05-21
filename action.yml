@@ -1,14 +1,5 @@
 name: "devsecops-action"
 description: "Foo bar."
-inputs:
-  d:
-    description: "Source directory to scan. Defaults to workspace"
-    required: false
-    default: "/github/workspace"
-  o:
-    description: "Output directory for the generated reports. Defaults to reports"
-    required: false
-    default: "/github/workspace/reports"
 runs:
   using: "docker"
   image: "docker://opensecurity/nodejsscan:cli"
@@ -18,5 +9,5 @@ runs:
     - "-o"
     - ${{ inputs.output }}
 branding:
-  icon: "check"
-  color: "blue"
+  icon: "shied"
+  color: "green"

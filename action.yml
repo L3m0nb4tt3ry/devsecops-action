@@ -9,5 +9,5 @@ runs:
     - "-o"
     - ${{ inputs.output }}
 branding:
-  icon: "shied"
+  icon: "shield"
   color: "green"
